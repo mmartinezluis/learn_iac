@@ -13,12 +13,12 @@ output "cluster_ca_certificate" {
   sensitive = true
 }
 
-output "username" {
-  value     = google_container_cluster.primary.master_auth.0.username
-  sensitive = true
-}
+# output "username" {
+#   value     = google_container_cluster.primary.master_auth.0.username
+#   sensitive = true
+# }
 
-output "password" {
-  value     = google_container_cluster.primary.master_auth.0.password
-  sensitive = true
-}
+# output "password" {
+#   value     = google_container_cluster.primary.master_auth.0.password
+#   sensitive = true
+# }

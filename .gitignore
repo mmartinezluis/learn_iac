@@ -94,5 +94,7 @@ website/node_modules
 plan.txt
 website/vendor
 namecheap.tf
-cicd_demo_gcp_creds.json
+# cicd_demo_gcp_creds.json
+.ssh
+testing-terraform-382521-8bd8ab6f354d.json
 *.pyc
