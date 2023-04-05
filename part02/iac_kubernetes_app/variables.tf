@@ -1,5 +1,6 @@
 variable "cluster" {
-  default = "cicd-workshops"
+  # default = "cicd-workshops"
+  default = "testing-terraform"
 }
 
 variable "app" {
@@ -15,6 +16,6 @@ variable "zone" {
 variable "docker-image" {
   type        = string
   description = "name of the docker image to deploy"
-  default     = "ariv3ra/learniac:latest"
+  default     = "70405381/testing-terraform:latest"
 }
 

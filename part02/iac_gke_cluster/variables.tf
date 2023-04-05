@@ -1,5 +1,6 @@
 variable "project" {
-  default = "cicd-workshops"
+  # default = "cicd-workshops"
+  default = "testing-terraform-382521"
 }
 
 variable "region" {
@@ -11,7 +12,8 @@ variable "zone" {
 }
 
 variable "cluster" {
-  default = "cicd-workshops"
+  # default = "cicd-workshops"
+  default = "testing-terraform"
 }
 
 variable "credentials" {

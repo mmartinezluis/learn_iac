@@ -1,7 +1,9 @@
 terraform {
-  required_version = "~>0.12"
+  # required_version = "~>0.12"
+  required_version = "~>1.4.4"
   backend "remote" {
-    organization = "datapunks"
+    # organization = "datapunks"
+    organization = "example-org-fe3411"
     workspaces {
       name = "iac_gke_cluster"
     }
@@ -14,8 +16,8 @@ resource "google_container_cluster" "primary" {
   initial_node_count = 3
 
   master_auth {
-    username = ""
-    password = ""
+    # username = ""
+    # password = ""
 
     client_certificate_config {
       issue_client_certificate = false

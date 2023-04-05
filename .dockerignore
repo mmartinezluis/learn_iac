@@ -16,3 +16,7 @@ Dockerfile
 plan.*
 part01/
 part02/
+
+# ignore ssh keys
+.ssh
+.ssh/
