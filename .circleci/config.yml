@@ -60,7 +60,7 @@ jobs:
       - run:
           name: Deploy App to GKE
           command: |
-            export CLUSTER_NAME="testing-terraform-382521"
+            export CLUSTER_NAME="testing-terraform"
             export TAG=0.2.<< pipeline.number >>
             export DOCKER_IMAGE="docker-image=${DOCKER_LOGIN}/${CIRCLE_PROJECT_REPONAME}:$TAG"
             echo $TF_CLOUD_TOKEN | base64 -d > $HOME/.terraformrc
@@ -88,7 +88,7 @@ jobs:
       - run:
           name: Destroy GKE Cluster
           command: |
-            export CLUSTER_NAME="testing-terraform-382521"
+            export CLUSTER_NAME="testing-terraform"
             export TAG=0.2.<< pipeline.number >>
             export DOCKER_IMAGE="docker-image=${DOCKER_LOGIN}/${CIRCLE_PROJECT_REPONAME}:$TAG"            
             echo $TF_CLOUD_TOKEN | base64 -d > $HOME/.terraformrc
