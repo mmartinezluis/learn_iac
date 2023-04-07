@@ -1,5 +1,6 @@
 variable "cluster" {
-  default = "cicd-workshops"
+  # default = "cicd-workshops"
+  default = "testing-terraform"
 }
 
 variable "app" {
