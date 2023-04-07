@@ -54,7 +54,7 @@ jobs:
     docker:
       - image: ariv3ra/terraform-gcp:latest
     environment:
-      CLOUDSDK_CORE_PROJECT: testing-terraform
+      CLOUDSDK_CORE_PROJECT: testing-terraform-382521
     steps:
       - checkout
       - run:
@@ -82,7 +82,7 @@ jobs:
     docker:
       - image: ariv3ra/terraform-gcp:latest
     environment:
-      CLOUDSDK_CORE_PROJECT: testing-terraform
+      CLOUDSDK_CORE_PROJECT: testing-terraform-382521
     steps:
       - checkout
       - run:
